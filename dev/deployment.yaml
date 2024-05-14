@@ -19,4 +19,4 @@ spec:
         - containerPort: 8080
         env:
         - name: ENV_VAR_NAME
-          value: "Env Var Value"
+          value: '{"db1": ["table1", "table2"], "db2": ["table1", "table2"]}'
