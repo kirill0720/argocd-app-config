@@ -5,6 +5,9 @@
 kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 
+# show all resources created
+kubectl get all -n argocd
+
 # access ArgoCD UI
 kubectl get svc -n argocd
 kubectl port-forward svc/argocd-server 8080:443 -n argocd
